@@ -11,7 +11,6 @@ import com.jwt.domain.Product;
 
 @Path("/hello")
 public class HelloWorldService {
-	// test1
 
 	@GET
 	@Path("/{name}")

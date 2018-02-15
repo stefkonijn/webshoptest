@@ -8,9 +8,13 @@
 				data) {
 			console.log(data);
 			$('#productname').append(data.productname);
+			$('#price').append(data.price);
+			$('#category').append(data.category);
 		});
 	</script>
-	<h2>Hello a sah!</h2>
+	<h2>Product</h2>
 	<p id="productname">Productnaam = </p>
+	<p id="price">Productnaam = </p>
+	<p id="category">Productnaam = </p>
 </body>
 </html>
