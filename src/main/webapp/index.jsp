@@ -4,11 +4,13 @@
 </head>
 <body>
 	<script>
-		$.getJSON('http://localhost:1555/RESTfullApp/rest/hello/tonijntje', function(
+		$.getJSON('http://localhost:1555/RESTfullApp/rest/hello/heh', function(
 				data) {
 			console.log(data);
+			$('#productname').append(data.productname);
 		});
 	</script>
 	<h2>Hello a sah!</h2>
+	<p id="productname">Productnaam = </p>
 </body>
 </html>
