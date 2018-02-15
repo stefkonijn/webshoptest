@@ -7,6 +7,7 @@ import javax.ws.rs.core.Response;
 import org.json.JSONObject;
 @Path("/hello")
 public class HelloWorldService {
+	//test
   
     @GET
     @Path("/{name}")
