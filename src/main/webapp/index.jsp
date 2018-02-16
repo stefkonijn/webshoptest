@@ -4,7 +4,7 @@
 </head>
 <body>
 	<script>
-		$.getJSON('http://localhost:1555/RESTfullApp/rest/hello/heh', function(
+		$.getJSON('/RESTfullApp/rest/hello/heh', function(
 				data) {
 			console.log(data);
 			$('#productname').append(data.productname);
