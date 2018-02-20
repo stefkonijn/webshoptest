@@ -1,0 +1,101 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>
+		WebShop
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/styling.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/javascript.js"></script>
+	<script>
+		$.getJSON('rest/hello/heh', function(
+				data) {
+			console.log(data);
+			$('#productname').append(data.productname);
+			$('#price').append(data.price);
+			$('#category').append(data.category);
+		});
+	</script>
+</head>
+
+<body>
+  <img src="img/logo.png">
+ <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#productoverzicht">Producten</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Computer & Electronica <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Product 1</a>
+      <a href="#">Product 2</a>
+      <a href="#">Product 3</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Boeken <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Product 1</a>
+      <a href="#">Product 2</a>
+      <a href="#">Product 3</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Speelgoed & Hobby <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Product 1</a>
+      <a href="#">Product 2</a>
+      <a href="#">Product 3</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Sport & Vrije tijd <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Product 1</a>
+      <a href="#">Product 2</a>
+      <a href="#">Product 3</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Dier <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Product 1</a>
+      <a href="#">Product 2</a>
+      <a href="#">Product 3</a>
+    </div>
+  </div>  
+  <a href="#winkelwagen">Winkelwagen</a>
+  <a href="#profiel">Profiel</a>
+  <a href="javascript:void(0);" class="icon" onclick="showMenu()">&#9776;</a>
+</div>
+
+<div class="col-12">
+<h2>In de aanbieding!</h2>
+</div>
+
+<div class="col-12">
+<div id="slider">
+<figure>
+<img src="img/laptop1.jpg">
+<img src="img/boek1.jpg">
+<img src="img/speelgoed1.jpg">
+<img src="img/tennisbal1.jpg">
+<img src="img/dier1.jpg">	
+</figure>	
+
+</div>	
+</div>	
+
+	<h2>Product</h2>
+	<p id="productname">Productnaam = </p>
+	<p id="price">Productnaam = </p>
+	<p id="category">Productnaam = </p>
+
+</body>
+</html>
