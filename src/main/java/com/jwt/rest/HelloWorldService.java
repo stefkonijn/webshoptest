@@ -16,7 +16,7 @@ public class HelloWorldService {
 	@Path("/{name}")
 	public Response getMsg(@PathParam("name") String name) {
 		Category category = new Category("computers");
-		Product product = new Product(name, category, 20.99, 1);
+		Product product = new Product(name,"plaatje", category, 20.99, 1);
 		System.out.println("hey");
 		System.out.println(product.getName());
 		category.addProduct(product);
