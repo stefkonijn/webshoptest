@@ -1,11 +1,11 @@
 package com.jwt.domain;
 
-public class Klant {
+public class Customer {
 	private String name;
 	private String picture;
 	private Adress adress;
 
-	public Klant(String name, String picture, String liveadress){
+	public Customer(String name, String picture, Adress adress){
 		this.name = name;
 		this.picture = picture;
 		this.adress = adress;
@@ -22,10 +22,10 @@ public class Klant {
 	public void setPicture(String picture) {
 		this.picture = picture;
 	}
-	public Adress getLiveadress() {
+	public Adress getAdress() {
 		return adress;
 	}
-	public void setLiveadress(Adress adress) {
+	public void setAdress(Adress adress) {
 		this.adress = adress;
 	}
 }
