@@ -2,10 +2,12 @@ package com.jwt.domain;
 
 public class Customer {
 	private String name;
+	private String lastname;
 	private Adress adress;
 
-	public Customer(String name, Adress adress){
+	public Customer(String name, String lastname, Adress adress){
 		this.name = name;
+		this.lastname = lastname;
 		this.adress = adress;
 	}
 	public String getName() {
@@ -20,5 +22,11 @@ public class Customer {
 	}
 	public void setAdress(Adress adress) {
 		this.adress = adress;
+	}
+	public String getLastname() {
+		return lastname;
+	}
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
 	}
 }

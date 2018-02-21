@@ -7,16 +7,17 @@
 	</title>
 	<link rel="stylesheet" type="text/css" href="css/styling.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/javascript.js"></script>
 	<script>
-		$.getJSON('rest/hello/heh', function(
-				data) {
-			console.log(data);
-			$('#productname').append(data.productname);
-			$('#price').append(data.price);
-			$('#category').append(data.category);
+		$.getJSON('rest/hello/heh', function(data) {
+			console.log(data)
+			for(var key in data){
+				console.log("Voornaam: " + data[key]['name'] + " - Achternaam: " + data[key]['lastname'] + " - Adres: " + data[key]['adress'] + " - Huisnummer: " + data[key]['streetnumber']);
+
+			}
 		});
 	</script>
+	<script src="js/javascript.js"></script>
+	
 </head>
 
 <body>
@@ -85,8 +86,6 @@
 <img src="img/laptop1.jpg">
 <img src="img/boek1.jpg">
 <img src="img/speelgoed1.jpg">
-<img src="img/tennisbal1.jpg">
-<img src="img/dier1.jpg">	
 </figure>	
 
 </div>	
